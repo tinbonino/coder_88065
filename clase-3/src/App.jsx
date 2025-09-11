@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import ClicksCounter from './components/ClicksCounter';
 import MainButtons from './components/MainButtons';
 import EjemploUseEffect from './components/EjemploUseEffect';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import './App.css'
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
         <ClicksCounter/>
          */}
          {/* <MainButtons/> */}
-         <EjemploUseEffect/>
+         {/* <EjemploUseEffect/> */}
+         <ItemListContainer/>
       </div>
  
     </>

@@ -16,7 +16,7 @@ function ItemList({ items }) {
     : items;
 
   return (
-    <div>
+    <div >
       <div>
         <button onClick={() => setSelectedCategory(categories.PANADERIA)}>
           Panaderia y cereales
@@ -28,14 +28,17 @@ function ItemList({ items }) {
           Lacteos
         </button>
       </div>
+      <div className="container">
+
       {filteredItems.map(item => (
         <Item
-          key={item.id}
-          nombre={item.nombre}
-          precio={item.precio}
-          descripcion={item.descripcion}
+        key={item.id}
+        nombre={item.nombre}
+        precio={item.precio}
+        descripcion={item.descripcion}
         />
       ))}
+      </div>
     </div>
   );
 }
